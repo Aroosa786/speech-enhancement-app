@@ -1,5 +1,6 @@
 dash
 plotly
+scipy
 numpy
 soundfile
 python-dotenv
@@ -7,5 +8,6 @@ gunicorn
 ai-coustics
 --find-links https://download.pytorch.org/whl/cpu
 --only-binary=all
+
 
 

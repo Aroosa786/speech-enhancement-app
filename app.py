@@ -41,21 +41,21 @@ app.layout = html.Div([
     
     html.Div([
         html.Div([
-            html.H3("🎤 Original Clean Speech", style={'textAlign': 'center', 'color': '#28a745'}),
+            html.H3("Original Clean Speech", style={'textAlign': 'center', 'color': '#28a745'}),
             dcc.Graph(id='original-spectrogram'),
             html.Div(id='original-audio-player')
         ], style={'width': '32%', 'display': 'inline-block', 'margin': '0.5%', 
                   'padding': '15px', 'backgroundColor': 'white', 'borderRadius': '10px'}),
         
         html.Div([
-            html.H3("🔊 Noisy Speech", style={'textAlign': 'center', 'color': '#dc3545'}),
+            html.H3("Noisy Speech", style={'textAlign': 'center', 'color': '#dc3545'}),
             dcc.Graph(id='noisy-spectrogram'),
             html.Div(id='noisy-audio-player')
         ], style={'width': '32%', 'display': 'inline-block', 'margin': '0.5%',
                   'padding': '15px', 'backgroundColor': 'white', 'borderRadius': '10px'}),
         
         html.Div([
-            html.H3("✨ AI Enhanced Speech", style={'textAlign': 'center', 'color': '#007bff'}),
+            html.H3("Enhanced Speech", style={'textAlign': 'center', 'color': '#007bff'}),
             dcc.Graph(id='enhanced-spectrogram'),
             html.Div(id='enhanced-audio-player')
         ], style={'width': '32%', 'display': 'inline-block', 'margin': '0.5%',
@@ -63,7 +63,7 @@ app.layout = html.Div([
     ]),
     
     html.Div([
-        html.H4("🎙️ Voice Activity Detection (VAD)", style={'textAlign': 'center'}),
+        html.H4("Voice Activity Detection (VAD)", style={'textAlign': 'center'}),
         dcc.Graph(id='vad-plot')
     ], style={'margin': '20px 0.5%', 'padding': '15px', 'backgroundColor': 'white', 'borderRadius': '10px'})
     
@@ -142,3 +142,4 @@ def update_audio(noise_level, enhancement_level):
 
 if __name__ == '__main__':
     app.run_server(debug=True, host='127.0.0.1', port=8050)
+
